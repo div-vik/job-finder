@@ -25,7 +25,7 @@ const Layout = () => {
 function App() {
   const user = true;
   return (
-    <main className="text-red-500">
+    <main className="">
       <Navbar />
       <Routes>
         <Route element={<Layout />}>
