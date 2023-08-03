@@ -10,9 +10,10 @@ import {
   UploadJob,
   UserProfile,
 } from "./pages";
+import { useSelector } from "react-redux";
 
 const Layout = () => {
-  const user = true;
+  const { user } = useSelector((state) => state.user);
   const location = useLocation();
 
   return user ? (
@@ -23,7 +24,8 @@ const Layout = () => {
 };
 
 function App() {
-  const user = true;
+  const { user } = useSelector((state) => state.user);
+
   return (
     <main className="">
       <Navbar />
