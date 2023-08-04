@@ -27,7 +27,7 @@ function App() {
   const { user } = useSelector((state) => state.user);
 
   return (
-    <main className="">
+    <main className="bg-[#f7fdfd]">
       <Navbar />
       <Routes>
         <Route element={<Layout />}>
